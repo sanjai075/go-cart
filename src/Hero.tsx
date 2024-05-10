@@ -1,13 +1,18 @@
+import { easeOut } from "framer-motion/dom"
 import laptop from "../public/Assets/laptop.png"
 import top from "../public/Assets/top.jpg"
 import top1 from "../public/Assets/top1.jpg"
+import{motion} from "framer-motion"
 
 const Hero = () => {
   return (
     <>
-    <div className="m-3">
+    <motion.div
+    
+ 
+    className="m-6">
       <img className="rounded-2xl" src={top1} alt="" />
-    </div>
+    </motion.div>
     </>
     // <div className="bg-gradient-to-r from-cyan-500 to-blue-500 mt-4 w-[95%] md:w-[98%] rounded-2xl ml-3 ">
     //     <div className="container grid md:grid-cols-2 py-8 ">

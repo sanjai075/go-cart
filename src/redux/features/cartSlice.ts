@@ -1,11 +1,11 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface Iproduct{
-    id:number;
-    title :string;
+    id:any;
+    title :any;
     img:any;
-    price:number;
-    quantity:number;
+    price:any;
+    quantity:any;
 }
 
 const initialState : Array<Iproduct> =[]

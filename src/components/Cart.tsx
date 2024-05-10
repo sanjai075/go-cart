@@ -5,6 +5,7 @@ import { IoMdArrowBack } from "react-icons/io";
 import cart from "../../public/Assets/cart.png"
 import cart1 from "../../public/Assets/cartimg.png"
 import cartl from "../../public/Assets/cartleft.png"
+import { motion } from "framer-motion"
 
 
 
@@ -44,7 +45,7 @@ const Cart = ({setShowCart}:any) => {
             product.map((item:any)=>(
                 <div className="flex justify-between p-3 gap-2 mb-7 border-b hover:shadow-2xl font-semibold rounded-2xl m-2">
                     <div className="">
-                    <img className="w-20  h-20" src = {item.img} alt="" />
+                    <img className="w-24  h-24 rounded-xl m-3" src = {item.img} alt="" />
                     </div>
 
                  <div className="flex flex-col   w-44 ">
