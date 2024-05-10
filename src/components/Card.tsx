@@ -82,41 +82,48 @@ const Card = () => {
                 //     backgroundImage:`url(${background})`
                 // }}
                 
-                className={`flex bg-gradient-to-r from-gray-100 to-gray-300 flex-col bg-no-repeat bg-cover items-center min-h-svh sm:max-h-screen   justify-around sm:flex-row   `}>
+                className={`flex  mt-1 flex-col bg-no-repeat bg-cover items-center min-h-svh sm:max-h-screen   justify-around sm:flex-row   `}>
 
                     <div className='  rounded-2xl sm:w-[250px] sm:h-[250px] p-3 w-80 sm:mt-[-120px] '>
                         <img className='rounded-2xl' src={item.images[0]} alt="" />
                     </div>
 
-                    <div className="text-black text-2xl  p-6 sm:w-[500px]  font-['Orwgano,cursive'] sm:mt-[-120px]   ">
-                        <h1 className='text-center sm:text-left text-3xl mb-5'>
-                            {item.title}
+                    <div className="text-2xl  p-6 sm:w-[500px]  text-pink sm:mt-[-120px]   ">
+                        <h1 className='text-center sm:text-left font-bold text-3xl mb-5'>
+                            {item.title.toUpperCase()}
                         </h1>
 
-                        <h4 className='text-xl text-black'>
+                        <h4 className='text-lg text-black font-semibold'>
                             {item.description}
                         </h4>
                         {addToCartBt  && product.find(item => item.id === id)?
-   <div className="flex flex-col md:flex md:flex-row justify-around items-center mb-2 mt-5 ">
+   <div className=" flex flex-col  ">
+     <p className='mt-5  sm:self-start self-center font-semibold'>{item.price}$</p>
    {/* <h2 className="font-medium text-accent text-x1">${price}</h2> */}
     <div
-      className="flex gap-2 items-center rounded-xl bg-gray-700 text-white p-2  cursor-pointer
+      className="flex gap-2 items-center justify-center rounded-lg md:max-w-44 w-full bg-gray-700 text-white p-2 mt-5 cursor-pointer
        hover:bg-accent"
         onClick={()=>{dispatch(removeFromCart(id),toast.success("Removed from cart"));setAddToCartBtn(false)}}
            >
-      <AiOutlineShoppingCart className="text-xs" /><p className="text-sm">Remove From Cart</p>
+      <AiOutlineShoppingCart className="text-2xl" /><p className="text-sm">Remove From Cart</p>
      </div>
  </div> :
- <div className="flex flex-col md:flex md:flex-row justify-around items-center mb-2 mt-5 ">
+ 
+<div className='flex flex-col  ' >
+  <p className='mt-5 sm:self-start self-center font-semibold'>{item.price}$</p>
+<div className="md:max-w-40 bg-slate-200 flex  mb-2 mt-5 ">
      {/* <h2 className="font-medium text-accent text-x1">${price}</h2> */}
       <div
-        className="flex gap-2 items-center rounded-xl bg-pink text-white p-2 cursor-pointer
+        className="flex w-full justify-center gap-2 items-center rounded-lg bg-pink text-white p-2 cursor-pointer
          hover:bg-accent"
           onClick={()=>{addProductToCart();setAddToCartBtn(true)}}
              >
-        <AiOutlineShoppingCart className="text-end" /> <p className="text-sm">Add To Cart</p>
+        <AiOutlineShoppingCart className="text-end" />
+         <p className="text-sm">Add To Cart</p>
        </div>
    </div> 
+</div>
+
   }
                     </div>
                   

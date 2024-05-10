@@ -70,7 +70,7 @@ const navigate = useNavigate()
   <p className="text-base font-semibold text-pink">{price}$</p>
   </div>
     <div
-      className="flex gap-2 items-center rounded-xl bg-gray-700 text-white p-2  cursor-pointer
+      className="flex gap-2 items-center rounded-lg bg-gray-700 text-white p-2  cursor-pointer
        hover:bg-accent"
         onClick={()=>{dispatch(removeFromCart(id),toast.success("Removed from cart"));setAddToCartBtn(false)}}
            >
@@ -84,7 +84,7 @@ const navigate = useNavigate()
   <p className="text-base font-semibold text-pink">{price}$</p>
   </div>
       <div
-        className="flex gap-2 items-center rounded-xl bg-pink text-white p-2 cursor-pointer
+        className="flex gap-2 items-center rounded-lg bg-pink text-white p-2 cursor-pointer
          hover:bg-accent"
           onClick={()=>{addProductToCart();setAddToCartBtn(true)}}
              >
