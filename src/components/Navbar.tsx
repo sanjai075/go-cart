@@ -1,9 +1,9 @@
-import { AiOutlineShoppingCart, AiOutlineUser } from "react-icons/ai";
+
 
 import { useAppSelector } from "../redux/hooks";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+
 import logo from "../../public/Assets/logo.png";
-import { easeOut, motion, useScroll } from "framer-motion";
+import { easeOut, motion, } from "framer-motion";
 import { Link,useLocation } from "react-router-dom";
 import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
 import { FaRegUser } from "react-icons/fa6";

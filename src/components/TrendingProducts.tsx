@@ -7,11 +7,11 @@ import phone from "../../public/Assets/phone.png"
 import projector from "../../public/Assets/projector.png"
 import sony from "../../public/Assets/sony.png"
 import watch from "../../public/Assets/watch.png"
-import shop from "../../public/Assets/shop.png"
+// import shop from "../../public/Assets/shop.png"
 import trend from "../../public/Assets/trend.png"
-import trend1 from "../../public/Assets/trend1.jpg"
+// import trend1 from "../../public/Assets/trend1.jpg"
 import trennd1 from "../../public/Assets/trennd1.png"
-import back from "../../public/Assets/shopbanner.jpg"
+// import back from "../../public/Assets/shopbanner.jpg"
 
 
 

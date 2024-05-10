@@ -8,7 +8,7 @@ import projector from "../../public/Assets/projector.png"
 import sony from "../../public/Assets/sony.png"
 import watch from "../../public/Assets/watch.png"
 import arr from "../../public/Assets/newarr.png"
-import shopping from "../../public/Assets/shopping.png"
+// import shopping from "../../public/Assets/shopping.png"
 import shopping1 from "../../public/Assets/shopping1.png"
 import shopbanner from "../../public/Assets/shopbanner.jpg"
 

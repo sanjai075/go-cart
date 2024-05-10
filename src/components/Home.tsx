@@ -1,9 +1,9 @@
 import Feature from "./Feature";
-import TrendingProducts from "./TrendingProducts"
-import { Toaster } from "react-hot-toast"
+// import TrendingProducts from "./TrendingProducts"
+// import { Toaster } from "react-hot-toast"
 import { Banner } from "./Banner"
-import NewAravials from "./NewAraivals"
-import Footer from "./Footer"
+// import NewAravials from "./NewAraivals"
+// import Footer from "./Footer"
 import Hero from "../Hero"
 import NewPproducts from "./NewProducts";
 

@@ -6,9 +6,9 @@ import {addToCart, removeFromCart } from "../redux/features/cartSlice";
 
 import toast from "react-hot-toast"
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import background from "../../public/Assets/download.png"
-import bck from "../../public/Assets/bck.jpg"
-import blue from "../../public/Assets/blue.png"
+// import background from "../../public/Assets/download.png"
+// import bck from "../../public/Assets/bck.jpg"
+// import blue from "../../public/Assets/blue.png"
 
 
 

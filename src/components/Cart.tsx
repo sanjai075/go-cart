@@ -5,7 +5,7 @@ import { IoMdArrowBack } from "react-icons/io";
 import cart from "../../public/Assets/cart.png"
 import cart1 from "../../public/Assets/cartimg.png"
 import cartl from "../../public/Assets/cartleft.png"
-import { motion } from "framer-motion"
+import { easeOut, motion } from "framer-motion"
 
 
 
@@ -22,7 +22,12 @@ const Cart = ({setShowCart}:any) => {
       return total
     }
   return (
-    <div className="  min-h-screen max-h-screen fixed bg-white w-full right-0 sm:w-[400px] md:w-[500px]  z-20  flex flex-col justify-between text-black ">
+    <motion.div 
+    initial={{opacity:0,x:10}}
+    animate={{opacity:1,x:0}}
+    transition={{delay:0.2,duration:0.2,ease:easeOut}}
+  
+    className="  min-h-screen max-h-screen fixed bg-white w-full right-0 sm:w-[400px] md:w-[500px]  z-20  flex flex-col justify-between text-black ">
         
          <div className="flex justify-around gap-8 text-base p-3 font-bold">
           
@@ -92,7 +97,7 @@ const Cart = ({setShowCart}:any) => {
           </div>
           
          
-    </div>
+    </motion.div>
    
   )
 }
