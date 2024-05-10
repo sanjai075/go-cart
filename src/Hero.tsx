@@ -1,6 +1,4 @@
-// import { easeOut } from "framer-motion/dom"
-// import laptop from "../public/Assets/laptop.png"
-// import top from "../public/Assets/top.jpg"
+
 import top1 from "../public/Assets/top1.jpg"
 import{motion} from "framer-motion"
 

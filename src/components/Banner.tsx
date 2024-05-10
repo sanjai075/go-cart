@@ -1,5 +1,4 @@
-//  import banner1 from "../../public/Assets/banner1.jpg"
-//  import banner2 from "../../public/Assets/banner2.jpg"
+
  import backbanner from "../../public/Assets/backbanner.jpg"
  import product from "../../public/Assets/product.png"
 

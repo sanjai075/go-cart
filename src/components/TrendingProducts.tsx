@@ -1,5 +1,4 @@
 import ProductCard from "./ProductCard";
-// import headphone from "../../public/Assets/headphone.png"
 import earpods from "../../public/Assets/earpods.png"
 import iphone from "../../public/Assets/iphone.png"
 import jbl from "../../public/Assets/jbl.png"
@@ -7,11 +6,9 @@ import phone from "../../public/Assets/phone.png"
 import projector from "../../public/Assets/projector.png"
 import sony from "../../public/Assets/sony.png"
 import watch from "../../public/Assets/watch.png"
-// import shop from "../../public/Assets/shop.png"
 import trend from "../../public/Assets/trend.png"
-// import trend1 from "../../public/Assets/trend1.jpg"
 import trennd1 from "../../public/Assets/trennd1.png"
-// import back from "../../public/Assets/shopbanner.jpg"
+
 
 
 
@@ -95,7 +92,7 @@ const products = [
                          </div>
                     </div>
             
-            <div className=" grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] md:grid-cols-3 lg:grid-cols-4 gap-2 mt-8">
+            <div className=" grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] md:grid-cols-5 lg:grid-cols-5 gap-2 mt-8">
               
                  
                  {

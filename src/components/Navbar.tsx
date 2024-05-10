@@ -1,7 +1,4 @@
-
-
 import { useAppSelector } from "../redux/hooks";
-
 import logo from "../../public/Assets/logo.png";
 import { easeOut, motion, } from "framer-motion";
 import { Link,useLocation } from "react-router-dom";
@@ -87,42 +84,14 @@ const Navbar = ({ setShowCart }: any) => {
           </motion.div>
          </div>
 
-          <div className="lg:flex hidden max-w-[250px]">
-            {/* <input
-              className="border-2 bg-white outline-none border-accent px-2 py-2 w-full"
-              type="text"
-              placeholder="search for products..."
-            /> */}
-
-            {/* <div className="bg-accent text-white text-[26px]  grid place-items-center px-4">
-              <BsSearch />
-            </div> */}
-          </div>
+         
 
           <div className="flex gap-4 md:gap-8 items-center">
             <div className="md:flex gap-3 ">
-              {/* <div
-                className="rounded-full border-2 border-gray-300 text-gray-300 text-[32px] w-[50px] h-[50px]
-        grid place-items-center"
-              >
-                <AiOutlineUser />
-              </div> */}
+             
 
-              {/* <div>
-                <p
-                  className="text-gray-500 cursor-pointer"
-                 
-                >
-                  Hello, {user?.id ? user?.given_name : "user"}
-                </p>
-                <p  onClick={() => {
-                    if (user?.id) {
-                      logout()
-                    }
-                    else login();
-                  }} className="font-medium cursor-pointer">{user?.id? "Sign out" : "Sign in"}</p>
-              </div> */}
-            {user? <div className="relative">
+              
+            {user? <div className="relative cursor-pointer">
              <div onClick={()=>setShowLogOut(!showLogOut)} className="text-xl uppercase rounded-full flex justify-center items-center text-white bg-pink md:w-10 md:h-10 w-8 h-8">
              <p> { user?.given_name?.slice(0,1)}</p>
              </div>

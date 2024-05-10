@@ -38,7 +38,7 @@ console.log(products)
                 <div className=' mt-52'> <span className="loading loading-dots loading-lg  "></span></div>
             </div>
         ) : (
-            <div className="grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] mt-8 md:grid-cols-3 lg:grid-cols-5 grid-rows-auto gap-2">
+            <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] mt-8  gap-3 m-4">
                 {products.slice(0, 30).map((item) => {
                    
 
