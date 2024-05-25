@@ -19,8 +19,8 @@ function App() {
       <KindeProvider
        clientId="cdffeded5e5a481f9b138c7bfe70568d"
        domain="https://gocart.kinde.com"
-       redirectUri="http://localhost:5173"
-       logoutUri="http://localhost:5173"
+       redirectUri="https://go-cart-so7n.vercel.app"
+       logoutUri="https://go-cart-so7n.vercel.app"
       >
         <Provider store={store}>
           <BrowserRouter>
