@@ -22,7 +22,7 @@ const MensClothing = () => {
       const fetchData = async () => {
         setItem(true)
           try {
-              const res = await axios.get(`  https://api.escuelajs.co/api/v1/products/?categoryId=3`);
+              const res = await axios.get(` https://api.escuelajs.co/api/v1/products/?categoryId=3`);
               setProducts(res.data);
               setItem(false)
           } catch (error) {
@@ -40,7 +40,7 @@ const MensClothing = () => {
     {(item)?  <div className='min-h-screen flex justify-center '>
       <div className=' mt-52'> <span className="loading loading-dots loading-lg  "></span></div>
     </div>:(
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] mt-8 md:grid-cols-3 lg:grid-cols-5 grid-rows-auto gap-2" >
+        <div className="grid sm:grid-cols-3 grid-cols-2  mt-8 md:grid-cols-4 lg:grid-cols-5 grid-rows-auto gap-2 m-2" >
         {products.slice(0,30).map((item)=>(
            <Products 
            key={item.id}

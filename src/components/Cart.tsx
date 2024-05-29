@@ -53,7 +53,7 @@ const Cart = ({setShowCart}:any) => {
                     <img className="w-24  h-24 rounded-xl m-3" src = {item.img} alt="" />
                     </div>
 
-                 <div className="flex flex-col   w-44 ">
+                 <div className="flex flex-col    w-36 ">
                  <p>${item.price}</p>
                    <p> {item.title}</p>
                    <p><span>{item.quantity}</span>x ${item.price}</p>
@@ -68,10 +68,10 @@ const Cart = ({setShowCart}:any) => {
                   </div>
                  </div> 
 
-                    <div className=" text-center mt-6 ">
+                    <div className=" text-center mt-6  ">
                     <MdDelete
                     onClick={()=>dispatch(removeFromCart(item.id))}
-                    className="w-16 h-7 text-[#0b0b0b] " />
+                    className="w-10 h-7 text-[#0b0b0b] " />
                     </div>
                   
                 </div>

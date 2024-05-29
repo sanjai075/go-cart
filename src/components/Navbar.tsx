@@ -33,10 +33,10 @@ const Navbar = ({ setShowCart }: any) => {
       className="pt-4 bg-white top-0 sticky   backdrop-blur-xl bg-opacity-65 "
     >
       <div className="container">
-        <div className="flex justify-around items-center font-bold text-gray-600 md:text-base ">
+        <div className="flex justify-around items-center font-bold text-sm text-gray-600 md:text-base  ">
           <img className="w-11 sm:w-14 mt-1" src={logo} alt="" />
 
-         <div className="flex w-[80%] justify-center md:gap-16 gap-6">
+         <div className="flex w-[80%] justify-center md:gap-16 gap-4">
          <motion.div
             initial={{ opacity: 0, y: -5 }}
             animate={{ opacity: 1, y: 0 }}

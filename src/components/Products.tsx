@@ -78,7 +78,7 @@ const navigate = useNavigate()
       <AiOutlineShoppingCart className="text-xs" /><p className="text-sm">Remove From Cart</p>
      </div>
  </div> :
- <div className="flex flex-col md:flex md:flex-row justify-around items-center mb-2 mt-3">
+ <div className="flex  md:flex md:flex-row justify-around items-center mb-2 mt-3">
      {/* <h2 className="font-medium text-accent text-x1">${price}</h2> */}
      <div>
   <p className="text-base font-semibold text-pink">{price}$</p>

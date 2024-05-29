@@ -89,7 +89,7 @@ const Card = () => {
                     </div>
 
                     <div className="text-2xl  p-6 sm:w-[500px]  text-pink sm:mt-[-120px]   ">
-                        <h1 className='text-center sm:text-left font-bold text-3xl mb-5'>
+                        <h1 className='text-center sm:text-left font-semibold text-3xl mb-5'>
                             {item.title.toUpperCase()}
                         </h1>
 
