@@ -84,16 +84,16 @@ const Card = () => {
                 
                 className={`flex  mt-1 flex-col bg-no-repeat bg-cover items-center min-h-svh sm:max-h-screen   justify-around sm:flex-row   `}>
 
-                    <div className='  rounded-2xl sm:w-[250px] sm:h-[250px] p-3 w-80 sm:mt-[-120px] '>
+                    <div className='  rounded-2xl sm:w-[250px] sm:h-[250px] p-3 w-80 sm:mt-[-120px]  '>
                         <img className='rounded-2xl' src={item.images[0]} alt="" />
                     </div>
 
                     <div className="text-2xl  p-6 sm:w-[500px]  text-pink sm:mt-[-120px]   ">
-                        <h1 className='text-center sm:text-left font-semibold text-3xl mb-5'>
+                        <h1 className='text-center sm:text-left font-semibold text-xl mb-5'>
                             {item.title.toUpperCase()}
                         </h1>
 
-                        <h4 className='text-lg text-black font-semibold'>
+                        <h4 className='text-base text-black '>
                             {item.description}
                         </h4>
                         {addToCartBt  && product.find(item => item.id === id)?

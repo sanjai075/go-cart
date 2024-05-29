@@ -98,7 +98,7 @@ const Navbar = ({ setShowCart }: any) => {
             {showLogOut? <div className="absolute right-0 cursor-pointer w-20 rounded-xl mt-3 bg-white shadow-lg p-2 sm:w-32 sm:p-3">
                <p onClick={()=>logout()}>Log Out</p>
              </div>:""}
-            </div> : <div className=" relative">
+            </div> : <div className=" relative cursor-pointer">
              <FaRegUser onClick={()=>setShowLogin(!showLogin)} />
             
              {showLogin?
@@ -111,7 +111,7 @@ const Navbar = ({ setShowCart }: any) => {
 
             <div
               onClick={() => setShowCart(true)}
-              className=" text-[32ppx] relative"
+              className=" text-[32ppx] relative cursor-pointer"
             >
               <FiShoppingCart />
               <div

@@ -43,7 +43,7 @@ const navigate = useNavigate()
     key={id} className="border border-gray-200  flex flex-col justify-around min-h-[400px] max-h-[400px] rounded-2xl hover:shadow-2xl  ">
        <div
         onClick={()=>navigate(`/${id}`)}
-       className="text-center p-2 flex justify-center  min-h-[60%]  max-h-[60%]   ">
+       className="text-center p-2 flex justify-center cursor-pointer  min-h-[60%]  max-h-[60%]   ">
         <img className="inline-block  rounded-2xl  " src={img} alt={title} />
       </div>
 
