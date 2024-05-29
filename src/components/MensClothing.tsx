@@ -40,7 +40,7 @@ const MensClothing = () => {
     {(item)?  <div className='min-h-screen flex justify-center '>
       <div className=' mt-52'> <span className="loading loading-dots loading-lg  "></span></div>
     </div>:(
-        <div className="grid sm:grid-cols-3 grid-cols-2  mt-8 md:grid-cols-4 lg:grid-cols-5 grid-rows-auto gap-2 m-2" >
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] mt-8 gap-3 m-4" >
         {products.slice(0,30).map((item)=>(
            <Products 
            key={item.id}

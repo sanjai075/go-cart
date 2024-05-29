@@ -47,7 +47,7 @@ const navigate = useNavigate()
         <img className="inline-block  rounded-2xl  " src={img} alt={title} />
       </div>
 
-      <div className="  flex flex-col gap-2 ml-4  rounded-2xl  ">
+      <div className="  flex flex-col gap-2 sm:ml-4 sm:items-start  justify-center items-center rounded-2xl  ">
        <p className="text-gray-500 text-[14px]  font-medium">{category?.toUpperCase()}</p>
         <h2 className=" text-xs ">{title?.slice(0,20).toUpperCase()}...</h2>
 
@@ -55,7 +55,7 @@ const navigate = useNavigate()
 
       
     </div>
-    <div className="mt-3 flex text-[#ffb21d] items-center ml-4">
+    <div className="mt-3 flex justify-center sm:justify-start text-[#ffb21d] items-center ml-4">
          <AiFillStar />
          <AiFillStar />
          <AiFillStar />
@@ -64,10 +64,10 @@ const navigate = useNavigate()
        <p className="text-gray-600 text-[14px] ml-2">(3 Review)</p>
        </div>
    {addToCartBt && product.find(item => item.id === id)?
-   <div className="flex flex-col md:flex md:flex-row justify-around items-center mb-2 mt-3">
+   <div className="flex flex-col md:flex md:flex-row justify-around  items-center mb-2 mt-3">
    {/* <h2 className="font-medium text-accent text-x1">${price}</h2> */}
   <div className="">
-  <p className="text-base font-semibold text-pink">{price}$</p>
+  <p className="text-base  font-semibold text-pink">{price}$</p>
   </div>
     <div
       className="flex gap-2 items-center rounded-lg bg-gray-700 text-white p-2  cursor-pointer
@@ -78,7 +78,7 @@ const navigate = useNavigate()
       <AiOutlineShoppingCart className="text-xs" /><p className="text-sm">Remove From Cart</p>
      </div>
  </div> :
- <div className="flex  md:flex md:flex-row justify-around items-center mb-2 mt-3">
+ <div className="flex flex-col md:flex md:flex-row justify-around items-center mb-2 mt-3">
      {/* <h2 className="font-medium text-accent text-x1">${price}</h2> */}
      <div>
   <p className="text-base font-semibold text-pink">{price}$</p>
